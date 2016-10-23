@@ -1,0 +1,39 @@
+﻿table {
+    width: 40em;
+    margin: 2em auto;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+td {
+    width: 10em;
+    padding: 0.3em;
+}
+
+tbody {
+    background-color: lightgray;
+}
+
+div {
+    text-align: center;
+    margin: 5px;
+}
+
+div.pager span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-right: 0.5em;
+}
+
+div.pager span.active {
+    background-color: red;
+}

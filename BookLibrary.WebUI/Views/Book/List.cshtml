@@ -1,0 +1,64 @@
+﻿@using BookLibrary.Domain.Entities
+@model List<Book>
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "List";
+}
+
+<div>
+    <input type="button" value="Add Book" id="addBook" />
+    <div>
+        <span>Filter</span>
+        <select>
+            <option>All books</option>
+            <option>Books available</option>
+            <option>Books taken by the user</option>
+        </select>
+        <input type="hidden" id="booksCount" value="@Model.Count"/>
+    </div>
+
+    <table class="paginated">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Count</th>
+                <th>Authors</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th style="visibility:hidden;"></th>
+            </tr>
+        </thead>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tbody>
+                <tr>
+                    <td id=@string.Format("title{0}",i)>@Model[i].Title</td>
+                    <td id=@string.Format("visibleBookCount{0}",i)>@Model[i].AllBooks</td>
+
+                    <td>
+                        @if (Model[i].Authors != null)
+                        {
+                            foreach (var author in Model[i].Authors)
+                            {
+                                <span>@author.AuthorName</span>
+                            }
+                        }
+                    </td>
+                    <td><a href="ChangeBookQuantity/@Model[i].BookId">ChangeBookQuantity</a></td>
+                    <td><a href="DeleteBook/@Model[i].BookId">DeleteBook</a></td>
+                    <td><a href="ShowHistory/@Model[i].BookId">History</a></td>
+                    <td><input type="button" value="Take Book" class="takeBook" id="@i" /></td>
+                    <td style="visibility:hidden;" id=@string.Format("bookId{0}",i)>@Model[i].BookId</td>
+                    <td style="visibility:hidden;" id=@string.Format("allBook{0}",i)>@Model[i].AllBooks</td>  
+                    <td style="visibility:hidden;" id=@string.Format("availableBooks{0}",i)>@Model[i].AvailableBooks</td>
+                </tr>
+            </tbody>
+        }
+
+    </table>
+
+    <span id="takeSummaryError"></span>
+</div>

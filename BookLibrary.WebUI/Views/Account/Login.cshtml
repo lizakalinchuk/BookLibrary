@@ -1,0 +1,28 @@
+﻿@using BookLibrary.Domain.Entities
+@model User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div>
+        <span>Enter to the system</span>
+        <div>
+            <span id="userSummaryError"></span>
+        </div>    
+        <div>
+          <label>User Name</label>
+        </div>
+        <div>
+            <input type="text" id="userName"/><span id="userNameError"></span>
+        </div>
+        <div>
+            <label>User Email</label>
+        </div>
+        <div>
+            <input type="text" id="userEmail" /><span id="userEmailError"></span>
+        </div>
+        <input type="button" value="Login" id="login" />
+        <input type="button" value="Register" id="registerRedirect" />
+</div>

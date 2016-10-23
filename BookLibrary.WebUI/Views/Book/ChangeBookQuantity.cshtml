@@ -1,0 +1,18 @@
+﻿@using BookLibrary.Domain.Entities
+@model Book
+
+@{
+    ViewBag.Title = "ChangeBookQuantity";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div>
+    <span>Book</span><span>"@Model.Title"</span>
+    <input type="hidden" id="editBookTitle" value="@Model.Title" />
+    <input type="button" value="Change quantity of books" id="changeBookQuantity" />
+    <input type="text" value="@Model.AllBooks" id="editBookQuantity" /><span id="quantityError"></span>
+    <input type="hidden" value="@Model.BookId" id="bookId" />
+    <input type="hidden" value="@Model.AvailableBooks" id="availableBookChange" />
+    <input type="hidden" value="@Model.AllBooks" id="initiallBookChange" />
+</div>
+

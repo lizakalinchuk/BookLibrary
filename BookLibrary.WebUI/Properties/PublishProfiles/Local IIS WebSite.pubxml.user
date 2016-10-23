@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ЛизаШаг\MVC</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/LibraryDB.mdf">
+      <publishTime>10/23/2016 16:39:54</publishTime>
+    </File>
+    <File Include="App_Data/LibraryDB_log.ldf">
+      <publishTime>10/23/2016 16:39:54</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>10/21/2016 22:07:16</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>10/21/2016 22:07:17</publishTime>
+    </File>
+    <File Include="bin/BookLibrary.Domain.dll">
+      <publishTime>10/23/2016 16:39:53</publishTime>
+    </File>
+    <File Include="bin/BookLibrary.WebUI.dll">
+      <publishTime>10/23/2016 16:39:53</publishTime>
+    </File>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>10/21/2016 21:35:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/21/2016 21:17:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/Moq.dll">
+      <publishTime>10/21/2016 21:35:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/21/2016 21:17:06</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/21/2016 21:17:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/21/2016 21:17:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/21/2016 21:17:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/21/2016 21:17:06</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/custom/account.js">
+      <publishTime>10/23/2016 13:56:19</publishTime>
+    </File>
+    <File Include="Scripts/custom/book.js">
+      <publishTime>10/23/2016 16:14:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>10/22/2016 10:49:51</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>10/23/2016 13:48:50</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>10/23/2016 13:48:32</publishTime>
+    </File>
+    <File Include="Views/Book/AddBook.cshtml">
+      <publishTime>10/23/2016 14:05:35</publishTime>
+    </File>
+    <File Include="Views/Book/ChangeBookQuantity.cshtml">
+      <publishTime>10/23/2016 15:45:15</publishTime>
+    </File>
+    <File Include="Views/Book/List.cshtml">
+      <publishTime>10/23/2016 16:13:37</publishTime>
+    </File>
+    <File Include="Views/Book/ShowHistory.cshtml">
+      <publishTime>10/23/2016 16:15:35</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutPage1.cshtml">
+      <publishTime>10/22/2016 20:06:51</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/22/2016 20:28:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/23/2016 16:39:54</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

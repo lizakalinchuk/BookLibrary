@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "AddBook";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>AddBook</h2>
+
+<div>
+    <label>Book Title</label><input type="text" id="bookTitle" /><span id="bookTitleError"></span>
+</div>
+<div class="container">
+    <label>Number of copies</label><input type="text" id="allBooks" /><span id="countError"></span>
+</div>
+<div>
+    <input type="button" value="Add Author" id="addAuthor" /><span id="authorError"></span>
+</div>
+<div>
+    <input type="button" id="addBookToRepository" value="Add book to Library" />
+</div>
